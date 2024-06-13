@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Agenda de Contatos</title>
+
+        <link type="text/css" rel="stylesheet" href="css/esqueleto.css">
+        <link type="text/css" rel="stylesheet" href="css/estilos.css">
+        <script type="text/javascript" src="js/comportamentos.js"></script>
+
+    </head>
+    <header>
+        <a id="mostra-form-cadastro" href="">Inserir novo contato</a>
+    </header>
+
+    <body>
+        <main>
+            <div id="agenda">
+                <h1>Cadastrar novo contato</h1>
+                <div id="form-register">
+                    <form id="form-contact" autocomplete="nope">
+                        <label>Nome: <input id="nome" name="nome" type="text" required /></label> <br>
+                        <label>E-mail: <input id="email" name="email" type="email" required /></label> <br>
+                        <label>Telefone: <input id="telefone" name="telefone" type="number" required /></label> <br>
+                        <label>Cidade: <input id="cidade" name="cidade" type="text" required /></label> <br>
+                    </form>
+                </div>
+                <div id="pick-avatar">
+                    <h1>Selecione um avatar</h1>
+                    <ul>
+                        <li>
+                            <img class="img-avatar" src="img/zeze.jpg">
+                            <input type="radio" name="avatar-selected" value="zeze.jpg"> 
+                        </li>
+
+                        <li>
+                            <img class="img-avatar" src="img/mae.jpg">
+                            <input type="radio" name="avatar-selected" value="mae.jpg"> 
+                        </li>
+
+                        <li>
+                            <img class="img-avatar" src="img/filha.jpg">
+                            <input type="radio" name="avatar-selected" value="filha.jpg"> 
+                        </li>
+
+                        <li>
+                            <img class="img-avatar" src="img/pai.jpg">
+                            <input type="radio" name="avatar-selected" value="pai.jpg"> 
+                        </li>
+
+                        <li>
+                            <img class="img-avatar" src="img/filho.jpg">
+                            <input type="radio" name="avatar-selected" value="filho.jpg"> 
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <button id="hide-form-cancel" type="button">Cancel</button>
+                <button type="submit">Save</button>
+                
+                <div id="contacts-list">
+                    <h1>Contatos da agenda</h1>
+                    <table id="tbl-contacts">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th>Nome:</th>
+                                <th>E-mail</th>
+                                <th>Telefone:</th>
+                                <th>Cidade:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> <img src="img/" class="btn-remove-contact"/> </td>
+                                <td> <img src="img/cross.png"/> </td>
+                                <td>Bianca Morais (eu)</td>
+                                <td>moraiscbianca@gmail.com</td>
+                                <td>(14) 99668-4426</td>
+                                <td>Jaú-SP</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
